@@ -13,6 +13,12 @@ module.exports = {
 		fontFamily: {
 			'IBM-Plex': ['IBM Plex Sans JP', 'sans-serif']
 		},
+		screens: {
+			xs: { max: '640px' },
+			sm: { min: '640px', max: '767px' },
+			md: { min: '768px', max: '1023px' },
+			lg: { min: '1024px' }
+		},
 		extend: {}
 	},
 	plugins: []
