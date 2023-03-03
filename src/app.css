@@ -8,6 +8,7 @@
 	body {
 		background-color: theme('colors.gunmetal');
 		font-family: theme('fontFamily.IBM-Plex');
+		padding: 12px;
 	}
 	h1 {
 		color: theme('colors.timberwolf');
