@@ -4,8 +4,12 @@
 <div class="flex h-screen flex-col">
 	<div class="m-auto text-center">
 		<h1 class="md:text-7xl sm:text-6xl xs:text-3xl">Christian Johansen</h1>
-		<h6 class="md:text-5xl sm:text-4xl xs:text-xl">Full Stack Developer</h6>
-		<p class="lg:text-lg md:text-base sm:text-sm xs:text-xs">Website coming soon</p>
+		<h6 class="md:text-5xl sm:text-4xl xs:text-2xl font-thin xs:font-light">
+			Full Stack Developer
+		</h6>
+		<p class="lg:text-lg md:text-base sm:text-sm xs:text-xs font-thin xs:font-light">
+			Website coming soon
+		</p>
 		<div class="lg:mt-24 mt-12 xs:mt-8 flex justify-center gap-8 xs:gap-4">
 			<a href="https://www.github.com/cjohansen11" target="_blank" rel="noreferrer">
 				<img

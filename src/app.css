@@ -9,11 +9,15 @@
 		background-color: theme('colors.gunmetal');
 		font-family: theme('fontFamily.IBM-Plex');
 		padding: 12px;
+		font-weight: theme('fontWeight.light');
+		letter-spacing: theme('letterSpacing.wider');
 	}
 	h1 {
 		color: theme('colors.timberwolf');
 		font-size: theme('fontSize.8xl');
 		font-weight: theme('fontWeight.normal');
+		letter-spacing: theme('letterSpacing.wider');
+		line-height: theme('lineHeight.10');
 	}
 	h6 {
 		color: theme('colors.french-beige');
