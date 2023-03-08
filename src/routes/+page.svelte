@@ -11,11 +11,6 @@
 		>
 			Full Stack Developer
 		</h6>
-		<p
-			class="lg:text-base md:text-sm sm:text-xs xs:text-xs font-thin sm:font-extralight xs:font-extralight"
-		>
-			Website coming soon
-		</p>
 		<div class="lg:mt-18 mt-10 xs:mt-8 flex justify-center gap-8 xs:gap-4">
 			<a href="https://www.github.com/cjohansen11" target="_blank" rel="noreferrer">
 				<img
