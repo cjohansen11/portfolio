@@ -1,4 +1,7 @@
 <script lang="ts">
+	import { trackPageView } from '../hooks/mixpanel';
+
+	trackPageView();
 </script>
 
 <div class="flex h-screen flex-col">
