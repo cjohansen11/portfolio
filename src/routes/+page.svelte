@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { trackPageView } from '../hooks/mixpanel';
+	import { trackPageView, trackIconClick } from '../hooks/mixpanel';
 
 	trackPageView();
 </script>
@@ -15,28 +15,43 @@
 			Full Stack Developer
 		</h6>
 		<div class="lg:mt-18 mt-10 xs:mt-8 flex justify-center gap-8 xs:gap-4">
-			<a href="https://www.github.com/cjohansen11" target="_blank" rel="noreferrer">
+			<a
+				href="https://www.github.com/cjohansen11"
+				target="_blank"
+				rel="noreferrer"
+				on:click={() => trackIconClick('github')}
+			>
 				<img
 					src="/icons/icon_github.svg"
 					alt="github icon"
 					class="m-0 lg:h-8 lg:w-8 md:h-6 md:w-6 sm:h-6 sm:w-6 xs:h-6 xs:w-6"
 				/>
 			</a>
-			<a href="https://www.linkedin.com/in/christian-johansen11" target="_blank" rel="noreferrer">
+			<a
+				href="https://www.linkedin.com/in/christian-johansen11"
+				target="_blank"
+				rel="noreferrer"
+				on:click={() => trackIconClick('linkedin')}
+			>
 				<img
 					src="/icons/icon_linkedin.svg"
 					alt="linkedin icon"
 					class="m-0 lg:h-8 lg:w-8 md:h-6 md:w-6 sm:h-6 sm:w-6 xs:h-6 xs:w-6"
 				/>
 			</a>
-			<a href="mailto: cjohansen11@me.com">
+			<a href="mailto: cjohansen11@me.com" on:click={() => trackIconClick('email')}>
 				<img
 					src="/icons/icon_email.svg"
 					alt="email icon"
 					class="m-0 lg:h-8 lg:w-8 md:h-6 md:w-6 sm:h-6 sm:w-6 xs:h-6 xs:w-6"
 				/>
 			</a>
-			<a href="/CJohansen_Resume.pdf" target="_blank" rel="noreferrer">
+			<a
+				href="/CJohansen_Resume.pdf"
+				target="_blank"
+				rel="noreferrer"
+				on:click={() => trackIconClick('resume')}
+			>
 				<img
 					src="/icons/icon_download.svg"
 					alt="download icon"

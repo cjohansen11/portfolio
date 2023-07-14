@@ -6,3 +6,7 @@ mixpanel.init(PUBLIC_MIXPANEL_PROJECT_TOKEN);
 export const trackPageView = () => {
 	mixpanel.track('page_view');
 };
+
+export const trackIconClick = (link: 'github' | 'linkedin' | 'email' | 'resume') => {
+	mixpanel.track('icon_click', { link });
+};
