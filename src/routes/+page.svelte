@@ -75,9 +75,9 @@
 				</a>
 			</div>
 		</div>
-		<div class="flex justify-center sm:pb-18 xs:pb-18" out:fade>
+		<div class="flex justify-center sticky" out:fade>
 			<a href="/portfolio">
-				<img src="/icons/icon_arrow_down.svg" alt="arrow down icon" class="m-4 h-12 w-12 pulse" />
+				<img src="/icons/icon_arrow_down.svg" alt="arrow down icon" class="h-12 w-12 pulse" />
 			</a>
 		</div>
 	</div>
