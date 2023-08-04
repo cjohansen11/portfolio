@@ -75,7 +75,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="flex justify-center sm:pb-12 xs:pb-12" out:fade>
+		<div class="flex justify-center sm:pb-24 xs:pb-24" out:fade>
 			<a href="/portfolio">
 				<img
 					src="/icons/icon_arrow_down.svg"
