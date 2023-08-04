@@ -13,7 +13,7 @@
 {#if ready}
 	<div
 		class="flex h-screen flex-col justify-center"
-		in:fade={{ duration: 1000, easing: cubicIn, delay: 100 }}
+		in:fade={{ duration: 1000, easing: cubicIn, delay: 250 }}
 		out:slide={{
 			duration: 1000,
 			delay: 100,
