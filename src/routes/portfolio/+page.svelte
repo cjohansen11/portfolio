@@ -53,9 +53,7 @@
 >
 	<a href="/" class="pt-4 pl-4 hover:opacity-50"><p>Home</p></a>
 	<div class="border-b-2 border-timberwolf border-opacity-40">
-		<p
-			class="lg:text-6xl text-4xl font-bold text-center flex align-middle justify-center pb-4 pt-2"
-		>
+		<p class="lg:text-5xl text-4xl text-center flex align-middle justify-center pb-4 pt-2">
 			Portfolio
 		</p>
 	</div>
