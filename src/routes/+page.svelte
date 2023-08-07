@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { trackPageView, trackIconClick } from '../hooks/mixpanel';
+	import { trackPageView, trackIconClick, trackPortfolioView } from '../hooks/mixpanel';
 	import { fade, slide } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	import { cubicIn, cubicOut } from 'svelte/easing';
@@ -76,7 +76,7 @@
 			</div>
 		</div>
 		<div class="flex justify-center sticky bottom-2" out:fade>
-			<a href="/portfolio">
+			<a href="/portfolio" on:click={trackPortfolioView}>
 				<img src="/icons/icon_arrow_down.svg" alt="arrow down icon" class="h-12 w-12 pulse" />
 			</a>
 		</div>
