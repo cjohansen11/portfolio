@@ -8,7 +8,7 @@
 			title: 'bash.gg',
 			icon: '/portfolio_icons/icon_bash.svg',
 			description: 'A browser based gaming platform',
-			tech: 'React, React Native, Nextjs, Node.js, Typescript, Amazon Web Services (AWS), PostgreSQL, Prisma, Expo, Stripe, NextAuth, Auth0',
+			tech: 'React, React Native, Nextjs, Node.js, Typescript, Amazon Web Services (AWS), PostgreSQL, Prisma, Expo, Stripe, NextAuth, Auth0, Docker, Terraform',
 			link: 'https://bash.gg'
 		},
 		{
@@ -16,7 +16,7 @@
 			title: 'Neon',
 			icon: '/portfolio_icons/icon_neon.svg',
 			description: 'An NFT marketplace for everyone',
-			tech: 'React, React Native, Node.js, Typescript, Firebase, Amazon Web Services (AWS), Web3.js, Solana, Magic',
+			tech: 'React, React Native, Node.js, Typescript, Firebase, Amazon Web Services (AWS), Web3.js, Solana, Magic, Docker',
 			link: ''
 		},
 		{
@@ -24,24 +24,24 @@
 			title: 'RIPHW',
 			icon: '/portfolio_icons/icon_riphw.png',
 			description: 'ChatGPT clone to help with homework',
-			tech: 'React, Nextjs, Node.js, Typescript, Railway, PostgreSQL, Prisma, TailwindCSS, ChatGPT, Stripe, Google Ad Manager',
-			link: 'https://rip.bash.gg'
+			tech: 'React, Nextjs, Node.js, Typescript, Railway, PostgreSQL, Prisma, Docker, TailwindCSS, ChatGPT, Stripe, Google Ad Manager',
+			link: 'https://riphomework.com'
 		},
 		{
 			id: 4,
-			title: 'CJohansen.dev',
-			icon: '/favicon.ico',
-			description: 'Personal portfolio website',
-			tech: 'Svelte, SvelteKit, Typescript, TailwindCSS, Vercel',
-			link: '/'
-		},
-		{
-			id: 5,
 			title: 'NFTY Kicks',
 			icon: '/portfolio_icons/icon_nfty.png',
 			description: 'A 10,000 NFT collection',
 			tech: 'React, Nextjs, TailwindCSS, Web3.js, Solidity, Vercel',
 			link: ''
+		},
+		{
+			id: 5,
+			title: 'CJohansen.dev',
+			icon: '/favicon.ico',
+			description: 'Personal portfolio website',
+			tech: 'Svelte, SvelteKit, Typescript, TailwindCSS, Vercel',
+			link: '/'
 		}
 	];
 </script>
