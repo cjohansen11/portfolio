@@ -57,7 +57,7 @@
 			Portfolio
 		</p>
 	</div>
-	<div class="grid grid-cols-1 overflow-scroll gap-8 pt-12 px-12">
+	<div class="grid grid-cols-1 overflow-y-scroll gap-8 pt-12 px-12 portfolio">
 		{#each data as { id, title, icon, description, tech, link }, index (id)}
 			<a
 				class="flex flex-col align-middle justify-center gap-4 px-8 py-4 rounded-md border-bluish-grey border-2 border-opacity-50 hover:border-opacity-100"
@@ -79,3 +79,13 @@
 		{/each}
 	</div>
 </div>
+
+<style>
+	.portfolio {
+		-ms-overflow-style: none; /* Internet Explorer 10+ */
+		scrollbar-width: none; /* Firefox */
+	}
+	.portfolio::-webkit-scrollbar {
+		display: none; /* Safari and Chrome */
+	}
+</style>
