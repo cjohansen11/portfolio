@@ -24,9 +24,7 @@
 			<h1 class="lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl sm:font-medium">
 				Christian Johansen
 			</h1>
-			<h6
-				class="lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl font-thin sm:font-light xs:font-light"
-			>
+			<h6 class="lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl font-light">
 				Full Stack Developer
 			</h6>
 			<div class="lg:mt-18 mt-10 xs:mt-8 flex justify-center gap-8 xs:gap-4">
