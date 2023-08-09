@@ -22,7 +22,17 @@
 		<meta name="robots" content="index, follow" />
 		%sveltekit.head%
 	</head>
-	<body data-sveltekit-preload-data="hover">
+	<body data-sveltekit-preload-data="hover" class="noScroll">
 		<div style="display: contents; margin: 12px; padding: 12px;">%sveltekit.body%</div>
 	</body>
 </html>
+
+<style>
+		.noScroll {
+		-ms-overflow-style: none; /* Internet Explorer 10+ */
+		scrollbar-width: none; /* Firefox */
+	}
+	.noScroll::-webkit-scrollbar {
+		display: none; /* Safari and Chrome */
+	}
+</style>
