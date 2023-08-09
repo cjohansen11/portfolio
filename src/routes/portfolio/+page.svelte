@@ -24,7 +24,7 @@
 			title: 'RIPHW',
 			icon: '/portfolio_icons/icon_riphw.png',
 			description: 'ChatGPT clone to help with homework',
-			tech: 'React, Nextjs, Node.js, Typescript, Railway, PostgreSQL, Prisma, Docker, TailwindCSS, ChatGPT, Stripe, Google Ad Manager',
+			tech: 'React, Nextjs, Node.js, Typescript, Railway, PostgreSQL, Prisma, Docker, TailwindCSS, OpenAI, Stripe, Google Ad Manager',
 			link: 'https://riphomework.com'
 		},
 		{
