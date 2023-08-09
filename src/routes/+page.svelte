@@ -14,8 +14,16 @@
 		}
 	}
 
+	function handleMobileScrollNavigation(e: UIEvent) {
+		e.preventDefault();
+
+		goto('/portfolio');
+	}
+
 	trackPageView();
 </script>
+
+<svelte:window on:scroll={handleMobileScrollNavigation} />
 
 {#if ready}
 	<div
