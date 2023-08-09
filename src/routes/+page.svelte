@@ -3,9 +3,16 @@
 	import { fade, slide } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	import { cubicIn, cubicOut } from 'svelte/easing';
+	import { goto } from '$app/navigation';
 
 	let ready = false;
 	onMount(() => (ready = true));
+
+	function handleScrollNavigation(e: WheelEvent) {
+		if (e.deltaY > 0) {
+			goto('/portfolio');
+		}
+	}
 
 	trackPageView();
 </script>
@@ -19,6 +26,7 @@
 			delay: 100,
 			easing: cubicOut
 		}}
+		on:wheel={handleScrollNavigation}
 	>
 		<div class="m-auto text-center" out:fade>
 			<h1 class="lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl sm:font-medium">
