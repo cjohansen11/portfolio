@@ -10,14 +10,12 @@
 
 	function handleScrollNavigation(e: WheelEvent) {
 		if (e.deltaY > 0) {
-			trackPortfolioView();
 			goto('/portfolio');
 		}
 	}
 
 	function handleMobileScrollNavigation(e: UIEvent) {
 		e.preventDefault();
-		trackPortfolioView();
 		goto('/portfolio');
 	}
 
