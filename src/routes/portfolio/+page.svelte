@@ -1,6 +1,10 @@
 <script lang="ts">
 	import { quadOut } from 'svelte/easing';
 	import { fade } from 'svelte/transition';
+	import { onMount } from 'svelte';
+	import { trackPortfolioView } from '../../hooks/mixpanel';
+
+	onMount(trackPortfolioView);
 
 	let data = [
 		{
