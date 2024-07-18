@@ -69,7 +69,7 @@
 			Portfolio
 		</p>
 	</div>
-	<div class="grid grid-cols-2 overflow-y-scroll gap-8 pt-12 px-12 noScroll">
+	<div class="grid grid-cols-2 xs:grid-cols-1 sm:grid-cols-1 overflow-y-scroll gap-8 pt-12 xs:pt-6 sm:pt-6 px-12 xs:px-4 sm:px-4 noScroll">
 		{#each data as { id, title, icon, description, tech, link }, index (id)}
 			<a
 				class="flex flex-col align-middle justify-center gap-4 px-8 py-4 rounded-md border-bluish-grey border-2 border-opacity-50 hover:border-opacity-100"
