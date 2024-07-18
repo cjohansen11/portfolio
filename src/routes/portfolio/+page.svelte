@@ -8,6 +8,14 @@
 
 	let data = [
 		{
+			id: 0,
+			title: 'Solace Health',
+			icon: '/portfolio_icons/icon_solace.svg',
+			description: 'Improve outcomes, and restore the promise of the U.S. healthcare system.',
+			tech: 'React, Nextjs, Node.js, NestJS, Typescript, Amazon Web Services (AWS), PostgreSQL, Prisma, Stripe, Auth0, Docker',
+			link: 'https://solace.health'
+		},
+		{
 			id: 1,
 			title: 'bash.gg',
 			icon: '/portfolio_icons/icon_bash.svg',
