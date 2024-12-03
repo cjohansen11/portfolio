@@ -3,6 +3,7 @@
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	import { trackPortfolioView } from '../../hooks/mixpanel';
+	import Layout from '../+layout.svelte';
 
 	onMount(trackPortfolioView);
 
@@ -21,7 +22,7 @@
 			icon: '/portfolio_icons/icon_bash.svg',
 			description: 'A browser based gaming platform',
 			tech: 'React, React Native, Nextjs, Node.js, Typescript, Amazon Web Services (AWS), PostgreSQL, Prisma, Expo, Stripe, NextAuth, Auth0, Docker, Terraform',
-			link: 'https://bash.gg'
+			link: ''
 		},
 		{
 			id: 2,
@@ -37,7 +38,7 @@
 			icon: '/portfolio_icons/icon_riphw.png',
 			description: 'ChatGPT clone to help with homework',
 			tech: 'React, Nextjs, Node.js, Typescript, Railway, PostgreSQL, Prisma, Docker, TailwindCSS, OpenAI, Stripe, Google Ad Manager',
-			link: 'https://riphomework.com'
+			link: ''
 		},
 		{
 			id: 4,
@@ -69,16 +70,19 @@
 			Portfolio
 		</p>
 	</div>
-	<div class="grid grid-cols-2 xs:grid-cols-1 sm:grid-cols-1 overflow-y-scroll gap-8 pt-12 xs:pt-6 sm:pt-6 px-12 xs:px-4 sm:px-4 noScroll">
+	<div class="grid grid-cols-3 xs:grid-cols-1 sm:grid-cols-1 overflow-y-scroll gap-8 pt-12 xs:pt-6 sm:pt-6 px-12 xs:px-4 sm:px-4 noScroll">
 		{#each data as { id, title, icon, description, tech, link }, index (id)}
-			<a
-				class="flex flex-col align-middle justify-center gap-4 px-8 py-4 rounded-md border-bluish-grey border-2 border-opacity-50 hover:border-opacity-100"
-				href={link ? link : '#'}
-				target={link ? '_blank' : '_self'}
-				rel="noreferrer"
+			<div
+				class="flex flex-col align-middle justify-center gap-4 px-8 py-4 rounded-md border-bluish-grey border-2 border-opacity-50"
 			>
 				<img src={icon} alt={`${title} icon`} class="m-0 mx-auto lg:h-12 h-12" />
+				{#if link}
+				<a href={link} target="_blank" rel="noreferrer" class="hover:cursor-pointer hover:underline decoration-timberwolf underline-offset-4 decoration-1">
+					<p class="font-bold lg:text-3xl text-2xl text-center">{title}</p>
+				</a>
+				{:else}
 				<p class="font-bold lg:text-3xl text-2xl text-center">{title}</p>
+				{/if}
 				<span class="gap-2 text-center">
 					<p class="font-semibold">Description:</p>
 					<p>{description}</p>
@@ -87,7 +91,7 @@
 					<p class="font-semibold">Stack:</p>
 					<p>{tech}</p>
 				</span>
-			</a>
+			</div>
 		{/each}
 	</div>
 </div>
