@@ -3,26 +3,15 @@
 	import { fade, slide } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	import { cubicIn, cubicOut } from 'svelte/easing';
-	import { goto } from '$app/navigation';
 
 	let ready = false;
 	onMount(() => (ready = true));
 
-	function handleScrollNavigation(e: WheelEvent) {
-		if (e.deltaY > 0) {
-			goto('/portfolio');
-		}
-	}
 
-	function handleMobileScrollNavigation(e: UIEvent) {
-		e.preventDefault();
-		goto('/portfolio');
-	}
 
 	trackPageView();
 </script>
 
-<svelte:window on:scroll={handleMobileScrollNavigation} />
 
 {#if ready}
 	<div
@@ -33,7 +22,6 @@
 			delay: 100,
 			easing: cubicOut
 		}}
-		on:wheel={handleScrollNavigation}
 	>
 		<div class="m-auto text-center" out:fade>
 			<h1 class="lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl sm:font-medium">
@@ -88,11 +76,11 @@
 				</a>
 			</div>
 		</div>
-		<div class="flex justify-center sticky bottom-2" out:fade>
+		<!-- <div class="flex justify-center sticky bottom-2" out:fade>
 			<a href="/portfolio">
 				<img src="/icons/icon_arrow_down.svg" alt="arrow down icon" class="h-12 w-12 pulse" />
 			</a>
-		</div>
+		</div> -->
 	</div>
 {/if}
 
