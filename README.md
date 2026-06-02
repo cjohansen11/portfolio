@@ -10,10 +10,6 @@ This is the personal portfolio and link website for me, Christian Johansen. The 
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
-
-`PUBLIC_MIXPANEL_PROJECT_TOKEN`
-
 ## Run Locally
 
 Clone the project

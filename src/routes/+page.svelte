@@ -1,15 +1,10 @@
 <script lang="ts">
-	import { trackPageView, trackIconClick } from '../hooks/mixpanel';
 	import { fade, slide } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	import { cubicIn, cubicOut } from 'svelte/easing';
 
 	let ready = false;
 	onMount(() => (ready = true));
-
-
-
-	trackPageView();
 </script>
 
 
@@ -35,7 +30,6 @@
 					href="https://www.github.com/cjohansen11"
 					target="_blank"
 					rel="noreferrer"
-					on:click={() => trackIconClick('github')}
 				>
 					<img
 						src="/icons/icon_github.svg"
@@ -47,7 +41,6 @@
 					href="https://www.linkedin.com/in/christian-johansen11"
 					target="_blank"
 					rel="noreferrer"
-					on:click={() => trackIconClick('linkedin')}
 				>
 					<img
 						src="/icons/icon_linkedin.svg"
@@ -55,7 +48,7 @@
 						class="m-0 lg:h-8 lg:w-8 md:h-6 md:w-6 sm:h-6 sm:w-6 xs:h-6 xs:w-6"
 					/>
 				</a>
-				<a href="mailto: cjohansen11@me.com" on:click={() => trackIconClick('email')}>
+				<a href="mailto: cjohansen11@me.com">
 					<img
 						src="/icons/icon_email.svg"
 						alt="email icon"
@@ -66,7 +59,6 @@
 					href="/CJohansen_Resume.pdf"
 					target="_blank"
 					rel="noreferrer"
-					on:click={() => trackIconClick('resume')}
 				>
 					<img
 						src="/icons/icon_download.svg"
