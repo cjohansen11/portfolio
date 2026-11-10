@@ -10,7 +10,7 @@
 
 {#if ready}
 	<div
-		class="flex h-screen flex-col justify-center"
+		class="flex min-h-dvh flex-col justify-center px-4"
 		in:fade={{ duration: 1000, easing: cubicIn, delay: 250 }}
 		out:slide={{
 			duration: 1000,
@@ -19,13 +19,13 @@
 		}}
 	>
 		<div class="m-auto text-center" out:fade>
-			<h1 class="lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl sm:font-medium">
+			<h1 class="text-3xl sm:font-medium md:text-4xl lg:text-5xl">
 				Christian Johansen
 			</h1>
-			<h6 class="lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl font-light">
+			<h6 class="mt-2 text-xl font-light sm:text-2xl md:text-3xl lg:text-4xl">
 				Full Stack Developer
 			</h6>
-			<div class="lg:mt-18 mt-10 xs:mt-8 flex justify-center gap-8 xs:gap-4">
+			<div class="mt-8 flex justify-center gap-6 sm:mt-10 sm:gap-8 lg:mt-18">
 				<a
 					href="https://www.github.com/cjohansen11"
 					target="_blank"
@@ -34,7 +34,7 @@
 					<img
 						src="/icons/icon_github.svg"
 						alt="github icon"
-						class="m-0 lg:h-8 lg:w-8 md:h-6 md:w-6 sm:h-6 sm:w-6 xs:h-6 xs:w-6"
+						class="m-0 h-6 w-6 lg:h-8 lg:w-8"
 					/>
 				</a>
 				<a
@@ -45,14 +45,14 @@
 					<img
 						src="/icons/icon_linkedin.svg"
 						alt="linkedin icon"
-						class="m-0 lg:h-8 lg:w-8 md:h-6 md:w-6 sm:h-6 sm:w-6 xs:h-6 xs:w-6"
+						class="m-0 h-6 w-6 lg:h-8 lg:w-8"
 					/>
 				</a>
 				<a href="mailto: cjohansen11@me.com">
 					<img
 						src="/icons/icon_email.svg"
 						alt="email icon"
-						class="m-0 lg:h-8 lg:w-8 md:h-6 md:w-6 sm:h-6 sm:w-6 xs:h-6 xs:w-6"
+						class="m-0 h-6 w-6 lg:h-8 lg:w-8"
 					/>
 				</a>
 				<a
@@ -63,7 +63,7 @@
 					<img
 						src="/icons/icon_download.svg"
 						alt="download icon"
-						class="m-0 lg:h-8 lg:w-8 md:h-6 md:w-6 sm:h-6 sm:w-6 xs:h-6 xs:w-6"
+						class="m-0 h-6 w-6 lg:h-8 lg:w-8"
 					/>
 				</a>
 			</div>
